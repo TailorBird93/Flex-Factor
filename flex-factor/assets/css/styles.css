@@ -33,6 +33,17 @@ body{
   justify-content: center;
 }
 
+.info-cards{
+  display: flex;
+  align-items: stretch;
+  flex-shrink: 1;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.card-img-top{
+  min-height: 80%;
+}
+/* button css credit  -> https://getcssscan.com/css-buttons-examples  */
 button{
   background-image: linear-gradient(92.88deg, #2c2f34 9.16%, #2e2c34 43.89%, #342d41 64.72%);
   border-radius: 8px;
@@ -63,7 +74,6 @@ button{
   .button-36 {
     padding: 0 2.6rem;
   }
-}
 }
 /* Footer Styling */
 .footer{
@@ -141,4 +151,3 @@ a:link {
     }
 }
 
-  
