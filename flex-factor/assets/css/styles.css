@@ -1,0 +1,63 @@
+*{
+    font-family: 'Lato', sans-serif;
+    color: srgb(201, 149, 53);
+}
+
+html, body{
+    height: 100%;
+}
+body{
+    height: 100%;
+    background-image: url("/flex-factor/assets/images/gym.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.navbar{
+    display: flex;
+    background-color: rgb(0, 0, 0, .3);
+    b
+}
+.navbar-links{
+    display: flex;
+}
+
+/* Links Styling */
+a:link {
+    text-decoration: none !important;
+    color: white !important;
+  }
+  
+  a:visited {
+    text-decoration: none !important;
+    color: white !important;
+  }
+  
+  a:hover {
+    text-decoration: underline !important;
+    color: white !important;
+  }
+  
+  a:active {
+    text-decoration: underline !important;
+    color: white !important;
+  }
+
+/* Mobile display */
+@media only screen and (max-width: 600px){
+   
+    .navbar-brand{
+        width: 100%;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important; 
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar-links{
+        display: flex;
+        flex-direction: column;
+    }
+}
