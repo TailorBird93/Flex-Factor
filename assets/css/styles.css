@@ -8,7 +8,7 @@ html, body{
 }
 body{
     height: 100%;
-    background-image: url("/flex-factor/assets/images/gym.jpg");
+    background-image: url("/assets/images/gym2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -32,12 +32,15 @@ body{
   align-items: center;
   justify-content: center;
 }
-
+.card{
+  margin: 10px;
+}
 .info-cards{
   display: flex;
   align-items: stretch;
   flex-shrink: 1;
-  justify-content: space-between;
+  margin: 5px;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 .card-img-top{
