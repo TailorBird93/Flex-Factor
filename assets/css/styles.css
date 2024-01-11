@@ -55,8 +55,11 @@ body{
   justify-content: center;
   padding: 20px;
 }
-p{
-  background-color: rgba(20, 19, 19, 0.9)
+.about p{
+  background-color: rgba(20, 19, 19, 0.9);
+  line-height:3;
+  border-radius: 5px;
+  padding: 5px;
 }
 /* button css credit  -> https://getcssscan.com/css-buttons-examples  */
 button{
