@@ -10,22 +10,90 @@ body{
     height: 100%;
     background-image: url("/flex-factor/assets/images/gym.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
+    justify-content: space-between
+    
 }
 /* Navbar styling */
 .navbar{
     display: flex;
     background-color: rgba(97, 93, 93, 0.267);
-    b
+}
+.navbar-links{
+  display: flex;
+}
+/* Main styling */
+
+.rollcall{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.navbar-links{
-    display: flex;
+button{
+  background-image: linear-gradient(92.88deg, #2c2f34 9.16%, #2e2c34 43.89%, #342d41 64.72%);
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  height: 4rem;
+  padding: 0 1.6rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all .5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-36:hover {
+  box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+  transition-duration: .1s;
+}
+
+@media (min-width: 768px) {
+  .button-36 {
+    padding: 0 2.6rem;
+  }
+}
 }
 /* Footer Styling */
-
-
+.footer{
+    display: flex;
+    flex-direction: row !important;
+    position: sticky !important;
+    align-items: center;
+    justify-content: space-around;
+    bottom: 0 !important;
+}
+.footer-info{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.footer-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-width: fit-content;
+    min-width: 100%;
+    max-width: 100%;
+    padding: 10px;
+}
+.footer-copyright{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /* Links Styling */
 a:link {
     text-decoration: none !important;
@@ -49,7 +117,11 @@ a:link {
 
 /* Mobile display */
 @media only screen and (max-width: 600px){
-   
+    body{
+      padding: none !important;
+      padding-left: 0;
+      padding-right: 0;
+    }
     .navbar-brand{
         width: 100%;
         display: flex !important;
@@ -64,4 +136,9 @@ a:link {
         display: flex;
         flex-direction: column;
     }
+    .footer{
+      flex-direction: column !important;
+    }
 }
+
+  
