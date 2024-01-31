@@ -1,6 +1,6 @@
 *{
     font-family: 'Lato', sans-serif;
-    color: srgb(201, 149, 53);
+    color: #fff;
 }
 
 html{
@@ -218,7 +218,7 @@ table{
     }
     body{
       height: 100% !important;
-      padding: none !important;
+      padding: 0 !important;
       padding-left: 0;
       padding-right: 0;
     }
