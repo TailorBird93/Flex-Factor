@@ -4,17 +4,16 @@
 }
 
 html, body{
-    height: 100%;
+    min-height: 100%;
 }
 body{
-    height: 100%;
     background-image: url("/assets/images/gym2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(3px);
 }
 /* Navbar styling */
 .navbar{
@@ -23,6 +22,9 @@ body{
 }
 .navbar-links{
   display: flex;
+}
+.active{
+  background-color: rgba(255, 255, 255, 0.1);
 }
 /* Main styling */
 
@@ -97,10 +99,10 @@ button{
 .footer{
     display: flex;
     flex-direction: row !important;
-    position: sticky !important;
+    position: absolute;
     align-items: center;
     justify-content: space-around;
-    bottom: 0 !important;
+    bottom: 0;
 }
 .footer-info{
   display: flex;
