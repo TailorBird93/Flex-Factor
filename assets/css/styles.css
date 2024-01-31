@@ -30,29 +30,51 @@ body{
   border-radius: 15px;
 }
 /* Main styling */
+.rollcall-full{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .rollcall, .info{
+  max-width: 50%;
   background-color: rgba(20, 19, 19, 0.5);
   border-radius: 10px;
   margin: 10px;
   padding: 5px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-direction: column;
+  align-items: center;
+  line-height: 2rem;
+}
+.cards-improved{
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  flex-grow: 0;
+}
+.card-new {
+  margin: 10px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgba(20, 19, 19, 0.9);
+  border-radius: 10px;
+}
+
+.card-new img {
+  max-width: 30%;
+  height: 100%;
+}
+.card-new .left{
   align-items: flex-start;
 }
-.card {
-  margin: 10px; /* Add margin between cards */
-  max-width: 300px; /* Limit the maximum width of each card */
+.card-new .right{
+  align-items: ;
 }
-.info-cards{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
-  overflow: auto;
-}
-.card-img-top{
-  min-height: 80%;
+.card-new p{
+  line-height: 3rem;
 }
 
 /* About Us section */
@@ -70,37 +92,56 @@ body{
   padding: 5px;
 }
 /* button css credit  -> https://getcssscan.com/css-buttons-examples  */
-.btn-membership{
-  background-image: linear-gradient(92.88deg, #2c2f34 9.16%, #2e2c34 43.89%, #342d41 64.72%);
-  border-radius: 20px;
-  border-style: none;
+.btn-membership {
+  appearance: none;
+  background-color: rgba(10, 10, 10, 0.966);
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
   box-sizing: border-box;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
-  flex-shrink: 0;
-  font-family: 'Lato', sans-serif;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
-  font-weight: 500;
-  height: 4rem;
-  padding: 0 1.6rem;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
   text-align: center;
-  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
-  transition: all .5s;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  min-width: 50%;
+  will-change: transform;
+}
+.buttons{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.button-36:hover {
-  box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
-  transition-duration: .1s;
+.btn-membership:disabled {
+  pointer-events: none;
 }
 
-@media (min-width: 768px) {
-  .button-36 {
-    padding: 0 2.6rem;
-  }
+.btn-membership:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
 }
+
+.btn-membership:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
 /* Footer Styling */
 .footer{
     display: flex;
@@ -155,12 +196,20 @@ a:link {
     color: white !important;
   }
 
+/* Tables  */
+table{
+  background-color: rgba(20, 19, 19, 0.9) !important;
+  margin: 0 !important;
+}
 /* Mobile display */
 @media only screen and (max-width: 600px){
     body{
       padding: none !important;
       padding-left: 0;
       padding-right: 0;
+    }
+    .rollcall .info{
+      max-width: 100%;
     }
     .navbar-brand{
         width: 100%;
@@ -178,6 +227,12 @@ a:link {
     }
     .footer{
       flex-direction: column !important;
+    }
+    .card-new{
+      flex-direction: column;
+    }
+    .card-new img{
+      min-width: 100%;
     }
 }
 
