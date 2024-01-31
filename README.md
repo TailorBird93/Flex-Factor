@@ -58,4 +58,17 @@ Some of the key goals are as follows:
 * Clicking on email opens Outlook (could differ based on the default app of current user)
 * Clicking on either of the social media links opens a new tab and directs user to the chosen page/app.
 
-### 
+### Contact Form
+* Contact form succesfully requires all three fields to be completed before submission.
+* Successful submission uses the Code Institute data dump to check the success status of the form submission.
+
+### Lighthouse reports
+* Desktop 
+* ![Lighthouse desktop report](Lighthouse.jpg)
+* Mobile 
+* ![Lighthouse mobile report](<Lighthouse mobile.jpg>)
+
+* Reports indicate further possibility of improvements in the performance section on mobile.
+
+## Known Issues
+* Issues with conflicting css rules, causing gutters on mobile view (decreased window on desktop does not cause it)

@@ -214,10 +214,10 @@ table{
 /* Mobile display */
 @media only screen and (max-width: 600px){
     html{
-      height: 100%;
+      height: 100% !important;
     }
     body{
-      height: 100%;
+      height: 100% !important;
       padding: none !important;
       padding-left: 0;
       padding-right: 0;
