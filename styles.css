@@ -16,7 +16,14 @@ body{
     justify-content: space-between;
     height: 100%;
 }
-
+p{
+  padding: 2rem !important;
+}
+.mt-4, .mb-3{
+  flex-direction: row;
+  align-items: center !important;
+  justify-content: center !important;
+}
 /* Navbar styling */
 .navbar{
     display: flex;
@@ -37,7 +44,7 @@ body{
 }
 .rollcall, .info{
   max-width: 50%;
-  background-color: rgba(20, 19, 19, 0.5);
+  background-color: rgba(20, 19, 19, 0.8);
   border-radius: 10px;
   margin: 10px;
   padding: 5px;
@@ -54,21 +61,32 @@ body{
   flex-grow: 0;
 }
 .card-new {
-  margin: 10px;
-  max-width: 100%;
+  margin: 1rem;
+  max-height: fit-content;
+  max-width: fit-content;
   display: flex;
   flex-direction: row;
   align-items: center;
   background-color: rgba(20, 19, 19, 0.9);
   border-radius: 10px;
 }
+.card-text{
+  max-width: 50%;
+}
 
 .card-new img {
   max-width: 30%;
   height: 100%;
 }
-.card-new p{
-  line-height: 3rem;
+
+ .left{
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.right{
+  align-items: center;
+  justify-content: flex-start;
 }
 
 /* About Us section */
@@ -83,7 +101,6 @@ body{
   background-color: rgba(20, 19, 19, 0.9);
   line-height:3;
   border-radius: 5px;
-  padding: 5px;
 }
 /* button css credit  -> https://getcssscan.com/css-buttons-examples  */
 .btn-membership {
@@ -227,9 +244,22 @@ table{
     }
     .card-new{
       flex-direction: column;
+      padding: 5px !important;
+      margin: 5px;
+      max-width: 100%;
+    }
+    .card-text{
+      max-width: fit-content;
     }
     .card-new img{
       display: none;
+    }
+    .btn-membership {
+      margin: 2rem;
+    }
+    .container {
+      width: 100% !important;
+      margin:auto !important;
     }
 }
 
